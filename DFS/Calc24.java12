@@ -1,0 +1,73 @@
+import java.util.*;
+
+public class Calc24 {
+
+    public static List<List<Integer>> res = new LinkedList<>(); 
+    public static void main(String[] args) {
+        int[] nums = {1,2,3,4};
+        char[] opts = {'+','-','*','/'};
+        //List<List<Integer>> numsRes = new LinkedList<>(); 
+        // 获取操作数的全排列 4*3*2*1 = 24种
+        //numsRes = getAllNumsPath(nums);
+        // 获取操作符的全组合 4*4*4 = 64种
+        getAllOptsPath(opts);
+
+        // 计算表达式
+
+        
+        
+    }
+
+    private static void getAllOptsPath(char[] opts) {
+    }
+
+    /**
+     * 
+     * @param nums 选则列表
+     * @return
+     */
+    private static List<List<Integer>> getAllNumsPath(int[] nums) {
+        // 记录「路径」
+        LinkedList<Integer> track = new LinkedList<>();
+        backtrack(nums, track);
+        return res;
+
+    }
+
+    /**
+     * 深度优先搜索，解决计算24点问题
+     * 
+     * @param nums 选择列表
+     * @param nums 路径记录
+     */
+    public static void backtrack(int[] nums, LinkedList<Integer> track) {
+        // 出口
+        if (nums.length == 0) {
+            res.add(new	LinkedList<Integer>(track));
+            return;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            // 4张牌，同一张牌只能选择一次, 选好后，牌值置为无效值（-1）
+            if (nums[i] != -1) {
+                // 做选择
+                track.add(nums[i]);
+                // 
+                nums[i] = -1;
+                backtrack(nums, track);
+                // 取消选择
+                track.removeLast();
+            }
+        }
+    }
+
+    /**
+     * 计算表达式是否为24
+     * 
+     * @return
+     */
+    private static boolean cac() {
+        return false;
+    }
+
+}

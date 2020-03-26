@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fun",
+            "request": "launch",
+            "mainClass": "Fun",
+            "projectName": "LeetCodeHub_3e3b4668"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main1",
+            "request": "launch",
+            "mainClass": "Main1",
+            "projectName": "LeetCodeHub_3e3b4668"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Caculator",
+            "request": "launch",
+            "mainClass": "Caculator",
+            "projectName": "LeetCodeHub_3e3b4668"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main12",
+            "request": "launch",
+            "mainClass": "Main12",
+            "projectName": "LeetCodeHub_3e3b4668"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "LeetCodeHub_3e3b4668"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Solution<LeetCodeHub_3e3b4668>",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "LeetCodeHub_3e3b4668"
+        }
+    ]
+}
